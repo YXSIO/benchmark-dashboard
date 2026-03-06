@@ -1,0 +1,127 @@
+.wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-table);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--bg-table);
+}
+
+.thead th {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.cornerTop {
+  min-width: 140px;
+  background: var(--bg-dark);
+}
+
+.sideHeaderCell {
+  min-width: 140px;
+  vertical-align: middle;
+  background: var(--bg-dark);
+}
+
+.label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.useCaseCell {
+  text-align: center;
+}
+
+.datasetCell {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.subDatasetCell {
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.metricCell {
+  min-width: 100px;
+}
+
+.metricName {
+  font-weight: 500;
+}
+
+.metricType {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.metricNameHeader {
+  text-align: center;
+}
+
+.metricTypeHeader {
+  text-align: center;
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.tbody tr {
+  background: var(--bg-table);
+}
+
+.tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tbody th,
+.tbody td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  color: var(--text-primary);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modelCell {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--bg-table);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tbody tr:nth-child(even) .modelCell {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.rowHighlight {
+  background: var(--highlight-bg) !important;
+}
+
+.rowHighlight .modelCell {
+  background: var(--highlight-bg) !important;
+}
+
+.cellHighlight {
+  background: var(--highlight-bg) !important;
+}
